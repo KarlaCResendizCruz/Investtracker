@@ -1,0 +1,5000 @@
+    /* Colores personalizados */
+    .navbar-custom {
+      background-color: #0a1a3a; /* Azul oscuro */
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #ffffff !important;
+    }
+    .navbar-subtitle {
+      font-size: 0.8rem;
+      color: #f1c40f; /* Amarillo */
+      display: block;
+      margin-top: -4px;
+    }
+    .logo-img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    .circle-logo {
+      height: 40px;
+      margin-left: 15px;
+    }
+
+
+.hero-image {
+object-fit: contain;
+}
+    /* =========================================================
+   Variables de diseño
+   ========================================================= */
+
+:root {
+    --color-background: #1a1435;
+    --color-background-dark: #120d28;
+    --color-white: #f8f7f5;
+    --color-orange: #f5a719;
+    --color-purple: #8981e7;
+    --color-pink: #ec2861;
+    --color-text: #d7d2ef;
+    --color-muted: #a29bbd;
+    --color-image-border: #050509;
+
+    --font-display: "Anton", Impact, sans-serif;
+    --font-body: "Montserrat", Arial, sans-serif;
+    --font-mono: "Roboto Mono", monospace;
+
+    --page-padding-x: clamp(1.25rem, 4.3vw, 5.25rem);
+}
+
+/* =========================================================
+   Configuración general
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    overflow-x: hidden;
+    color: var(--color-white);
+    
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.colorBGB {
+    background-color: var(--color-background);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/***Footer Inicio***/
+
+/* ==========================================================
+   VARIABLES
+========================================================== */
+
+:root {
+
+    /*
+        Color principal tomado de la estética
+        de las secciones anteriores.
+    */
+    --footer-bg: #1B1537;
+
+    /*
+        Texto principal.
+    */
+    --footer-text: #FAF8F8;
+
+    /*
+        Texto secundario/lavanda.
+    */
+    --footer-secondary: #C8C2D5;
+
+}
+
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.site-footer {
+
+    width: 100%;
+
+    background-color: var(--footer-bg);
+
+    color: var(--footer-text);
+
+}
+
+
+/* ==========================================================
+   CONTENEDOR
+========================================================== */
+
+.footer-container {
+
+    width: 100%;
+
+    max-width: 1950px;
+
+    margin: 0 auto;
+
+    padding: 26px 4% 28px;
+
+}
+
+
+/* ==========================================================
+   INFORMACIÓN PRINCIPAL
+========================================================== */
+
+.footer-main {
+
+    width: 100%;
+
+}
+
+
+/* ==========================================================
+   NOMBRES
+========================================================== */
+
+.footer-nombres {
+
+    margin: 0;
+
+    color: var(--footer-text);
+
+    /*
+        Una tipografía geométrica/negrita
+        similar a la de la referencia.
+    */
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: clamp(17px, 1.25vw, 24px);
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: 0.2px;
+
+}
+
+
+/* ==========================================================
+   ASESOR / INSTITUCIÓN
+========================================================== */
+
+.footer-asesor {
+
+    margin: 5px 0 0;
+
+    color: var(--footer-secondary);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: clamp(14px, 1vw, 19px);
+
+    font-weight: 400;
+
+    line-height: 1.35;
+
+    letter-spacing: 0.8px;
+
+}
+
+
+/* ==========================================================
+   AVISO LEGAL
+========================================================== */
+
+.footer-aviso {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+}
+
+
+.footer-aviso p {
+
+    max-width: 430px;
+
+    margin: 0;
+
+    color: var(--footer-secondary);
+
+    /*
+        La referencia utiliza un estilo
+        monoespaciado para este aviso.
+    */
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: clamp(11px, 0.72vw, 14px);
+
+    font-weight: 500;
+
+    line-height: 1.35;
+
+    letter-spacing: 0.7px;
+
+}
+
+
+/* ==========================================================
+   PANTALLAS GRANDES
+========================================================== */
+
+@media (min-width: 1600px) {
+
+    .footer-container {
+
+        padding-left: 4%;
+
+        padding-right: 4%;
+
+        padding-top: 27px;
+
+        padding-bottom: 29px;
+
+    }
+
+
+    .footer-nombres {
+
+        font-size: 21px;
+
+    }
+
+
+    .footer-asesor {
+
+        font-size: 16px;
+
+    }
+
+
+    .footer-aviso p {
+
+        font-size: 12px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   LAPTOP
+========================================================== */
+
+@media (max-width: 1399.98px) {
+
+    .footer-container {
+
+        padding-left: 3%;
+
+        padding-right: 3%;
+
+    }
+
+
+    .footer-nombres {
+
+        font-size: clamp(16px, 1.35vw, 21px);
+
+    }
+
+
+    .footer-asesor {
+
+        font-size: clamp(13px, 1vw, 17px);
+
+    }
+
+
+    .footer-aviso p {
+
+        font-size: 12px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 991.98px) {
+
+    .footer-container {
+
+        padding: 25px 5%;
+
+    }
+
+
+    .footer-nombres {
+
+        font-size: clamp(16px, 2.2vw, 21px);
+
+    }
+
+
+    .footer-asesor {
+
+        margin-top: 7px;
+
+        font-size: clamp(13px, 1.7vw, 17px);
+
+    }
+
+
+    .footer-aviso {
+
+        justify-content: flex-start;
+
+        margin-top: 20px;
+
+    }
+
+
+    .footer-aviso p {
+
+        max-width: 600px;
+
+        font-size: 12px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MÓVIL
+========================================================== */
+
+@media (max-width: 767.98px) {
+
+    .footer-container {
+
+        padding: 25px 20px;
+
+    }
+
+
+    /* ----------------------------------------------
+       NOMBRES
+    ---------------------------------------------- */
+
+    .footer-nombres {
+
+        font-size: 17px;
+
+        line-height: 1.4;
+
+    }
+
+
+    /* ----------------------------------------------
+       ASESOR
+    ---------------------------------------------- */
+
+    .footer-asesor {
+
+        margin-top: 9px;
+
+        font-size: 14px;
+
+        line-height: 1.5;
+
+    }
+
+
+    /* ----------------------------------------------
+       AVISO
+    ---------------------------------------------- */
+
+    .footer-aviso {
+
+        margin-top: 22px;
+
+        padding-top: 17px;
+
+        border-top: 1px solid rgba(200, 194, 213, 0.2);
+
+    }
+
+
+    .footer-aviso p {
+
+        max-width: 100%;
+
+        font-size: 11px;
+
+        line-height: 1.5;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MÓVIL PEQUEÑO
+========================================================== */
+
+@media (max-width: 400px) {
+
+    .footer-container {
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+
+    }
+
+
+    .footer-nombres {
+
+        font-size: 16px;
+
+    }
+
+
+    .footer-asesor {
+
+        font-size: 13px;
+
+    }
+
+
+    .footer-aviso p {
+
+        font-size: 10px;
+
+    }
+
+}
+
+/***Footer Final***/
+
+
+/***Seccion6 Inicio***/
+
+/* ==========================================================
+   VARIABLES DE COLOR
+========================================================== */
+
+:root {
+
+    /* Fondo general */
+    --fondo: #F4EBE2;
+
+    /* Azul oscuro */
+    --oscuro: #1B1537;
+
+    /* Azul */
+    --azul: #3E39C9;
+
+    /* Verde */
+    --verde: #087F6C;
+
+    /* Rosa */
+    --rosa: #E9326A;
+
+    /* Borde */
+    --borde: #E1D4C4;
+
+    /* Texto secundario */
+    --texto: #514A6D;
+
+    /* Blanco */
+    --blanco: #FFFFFF;
+
+}
+
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+
+
+.seccion6 {
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: var(--fondo);
+
+    color: var(--oscuro);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+}
+
+
+/* ==========================================================
+   SECCIÓN
+========================================================== */
+
+.evidencia-section {
+
+    width: 100%;
+
+    background-color: var(--fondo);
+
+    padding: 28px 4% 32px;
+
+}
+
+
+/* ==========================================================
+   CONTENEDOR
+========================================================== */
+
+.evidencia-container {
+
+    width: 100%;
+
+    max-width: 1950px;
+
+    margin: 0 auto;
+
+}
+
+
+/* ==========================================================
+   ENCABEZADO
+========================================================== */
+
+.evidencia-header {
+
+    margin-bottom: 8px;
+
+}
+
+
+.seccion-numero {
+
+    color: var(--rosa);
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    letter-spacing: 5px;
+
+    line-height: 1;
+
+}
+
+
+.seccion-numero span {
+
+    margin: 0 8px;
+
+}
+
+
+/* ==========================================================
+   MÉTRICAS
+========================================================== */
+
+.metricas-row {
+
+    width: 100%;
+
+}
+
+
+/* ==========================================================
+   CARD DE MÉTRICA
+========================================================== */
+
+.metrica-card {
+
+    width: 100%;
+
+    height: 125px;
+
+    padding: 10px 20px 12px;
+
+    background-color: var(--blanco);
+
+    border: 2px solid var(--borde);
+
+    border-radius: 17px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+/* ==========================================================
+   VALOR DE LA MÉTRICA
+========================================================== */
+
+.metrica-valor {
+
+    font-family:
+        Impact,
+        Haettenschweiler,
+        "Arial Narrow Bold",
+        sans-serif;
+
+    font-size: clamp(38px, 3.2vw, 58px);
+
+    font-weight: 900;
+
+    line-height: 0.85;
+
+    letter-spacing: -1px;
+
+    white-space: nowrap;
+
+}
+
+
+/* ==========================================================
+   COLORES
+========================================================== */
+
+.metrica-valor.azul {
+
+    color: var(--azul);
+
+}
+
+
+.metrica-valor.verde {
+
+    color: var(--verde);
+
+}
+
+
+.metrica-valor.oscuro {
+
+    color: var(--oscuro);
+
+}
+
+
+.metrica-valor.rosa {
+
+    color: var(--rosa);
+
+}
+
+
+/* ==========================================================
+   DESCRIPCIÓN
+========================================================== */
+
+.metrica-descripcion {
+
+    margin: 8px 0 0;
+
+    color: var(--texto);
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: clamp(12px, 0.9vw, 16px);
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+/* ==========================================================
+   SECCIÓN TECNOLOGÍA
+========================================================== */
+
+.tecnologia-section {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+}
+
+
+/* ==========================================================
+   TÍTULO TECNOLOGÍA
+========================================================== */
+
+.tecnologia-titulo {
+
+    margin-bottom: 10px;
+
+    color: var(--rosa);
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    letter-spacing: 5px;
+
+}
+
+
+/* ==========================================================
+   LISTA DE TECNOLOGÍAS
+========================================================== */
+
+.tecnologia-lista {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+}
+
+
+/* ==========================================================
+   ITEM TECNOLOGÍA
+========================================================== */
+
+.tech-item {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 30px;
+
+    padding: 4px 17px;
+
+    background-color: var(--blanco);
+
+    border: 1.5px solid var(--borde);
+
+    border-radius: 20px;
+
+    color: var(--oscuro);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+}
+
+
+/* ==========================================================
+   TEXTO DE PRUEBAS
+========================================================== */
+
+.pruebas-texto {
+
+    margin: 10px 0 0;
+
+    color: var(--texto);
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: clamp(11px, 0.8vw, 15px);
+
+    font-weight: 500;
+
+    line-height: 1.3;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+/* ==========================================================
+   SECCIÓN QR
+========================================================== */
+
+.qr-section {
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 250px;
+
+    padding-left: 10px;
+
+}
+
+
+/* ==========================================================
+   TÍTULO QR
+========================================================== */
+
+.qr-titulo {
+
+    margin-bottom: 10px;
+
+    color: var(--rosa);
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+
+    text-align: center;
+
+}
+
+
+/* ==========================================================
+   CONTENIDO QR
+========================================================== */
+
+.qr-content {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+
+}
+
+
+/* ==========================================================
+   INFORMACIÓN PLATAFORMA
+========================================================== */
+
+.plataforma-info {
+
+    text-align: center;
+
+    flex: 1 1 auto;
+
+}
+
+
+.plataforma-info h2 {
+
+    margin: 0;
+
+    color: var(--oscuro);
+
+    font-family:
+        Impact,
+        Haettenschweiler,
+        "Arial Narrow Bold",
+        sans-serif;
+
+    font-size: clamp(23px, 1.8vw, 34px);
+
+    line-height: 1;
+
+}
+
+
+/* ==========================================================
+   URL PLATAFORMA
+========================================================== */
+
+.plataforma-url {
+
+    margin-top: 5px;
+
+    color: var(--azul);
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: clamp(10px, 0.75vw, 14px);
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+}
+
+
+/* ==========================================================
+   BOTÓN
+========================================================== */
+
+.btn-plataforma {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-top: 30px;
+
+    min-height: 41px;
+
+    padding: 7px 14px;
+
+    border: 1.5px solid var(--oscuro);
+
+    border-radius: 7px;
+
+    background-color: var(--azul);
+
+    color: var(--blanco);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+
+}
+
+
+.btn-plataforma:hover {
+
+    color: var(--blanco);
+
+    opacity: 0.9;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* ==========================================================
+   CONTENEDOR DEL QR
+========================================================== */
+
+.qr-wrapper {
+
+    width: 150px;
+
+    height: 150px;
+
+    flex: 0 0 150px;
+
+    padding: 8px;
+
+    background-color: var(--blanco);
+
+    border: 2px solid var(--oscuro);
+
+    border-radius: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+}
+
+
+/* ==========================================================
+   IMAGEN QR
+========================================================== */
+
+.qr-image {
+
+    width: 100%;
+
+    height: 100%;
+
+
+
+}
+
+
+/*
+    ==========================================================
+    AQUÍ COLOCAS LA RUTA DEL QR
+    ==========================================================
+
+    Ejemplo:
+
+    <img
+        src="img/qr.png"
+        alt="Código QR"
+        class="qr-image"
+    >
+
+    ==========================================================
+*/
+
+
+/* ==========================================================
+   REPOSITORIO
+========================================================== */
+
+.repositorio {
+
+    margin-top: 6px;
+
+    text-align: right;
+
+}
+
+
+.repositorio-titulo {
+
+    color: var(--oscuro);
+
+    font-family:
+        Impact,
+        Haettenschweiler,
+        "Arial Narrow Bold",
+        sans-serif;
+
+    font-size: clamp(23px, 1.8vw, 34px);
+
+    line-height: 1;
+
+}
+
+
+.repositorio-url {
+
+    margin-top: 4px;
+
+    color: var(--azul);
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: clamp(10px, 0.75vw, 14px);
+
+    font-weight: 700;
+
+}
+
+
+/* ==========================================================
+   PANTALLAS GRANDES
+========================================================== */
+
+@media (min-width: 1600px) {
+
+    .evidencia-section {
+
+        padding-left: 4%;
+
+        padding-right: 4%;
+
+    }
+
+
+    .metrica-card {
+
+        height: 125px;
+
+    }
+
+
+    .qr-wrapper {
+
+        width: 175px;
+
+        height: 175px;
+
+        flex-basis: 175px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   LAPTOP
+========================================================== */
+
+@media (max-width: 1399.98px) {
+
+    .evidencia-section {
+
+        padding-left: 3%;
+
+        padding-right: 3%;
+
+    }
+
+
+    .metrica-card {
+
+        padding-left: 17px;
+
+        padding-right: 17px;
+
+    }
+
+
+    .metrica-valor {
+
+        font-size: clamp(35px, 3.5vw, 52px);
+
+    }
+
+
+    .qr-content {
+
+        gap: 12px;
+
+    }
+
+
+    .qr-wrapper {
+
+        width: 135px;
+
+        height: 135px;
+
+        flex-basis: 135px;
+
+    }
+
+
+    .btn-plataforma {
+
+        margin-top: 22px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   TABLET / PANTALLAS MEDIANAS
+========================================================== */
+
+@media (max-width: 1199.98px) {
+
+    .evidencia-section {
+
+        padding: 28px 4% 35px;
+
+    }
+
+
+    .metrica-card {
+
+        height: 120px;
+
+    }
+
+
+    .metrica-valor {
+
+        font-size: clamp(34px, 4vw, 50px);
+
+    }
+
+
+    .metrica-descripcion {
+
+        font-size: 13px;
+
+    }
+
+
+    .qr-section {
+
+        padding-left: 0;
+
+        margin-top: 10px;
+
+    }
+
+
+    .qr-content {
+
+        max-width: 550px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .qr-wrapper {
+
+        width: 155px;
+
+        height: 155px;
+
+        flex-basis: 155px;
+
+    }
+
+
+    .repositorio {
+
+        margin-top: 8px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 991.98px) {
+
+    .metrica-card {
+
+        height: 120px;
+
+    }
+
+
+    .metrica-valor {
+
+        font-size: clamp(38px, 6vw, 52px);
+
+    }
+
+
+    .metrica-descripcion {
+
+        font-size: 13px;
+
+    }
+
+
+    .tecnologia-titulo {
+
+        font-size: 15px;
+
+        letter-spacing: 4px;
+
+    }
+
+
+    .tech-item {
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MÓVIL
+========================================================== */
+
+@media (max-width: 767.98px) {
+
+    .evidencia-section {
+
+        padding: 25px 18px 30px;
+
+    }
+
+
+    /* ----------------------------------------------
+       ENCABEZADO
+    ---------------------------------------------- */
+
+    .seccion-numero {
+
+        font-size: 14px;
+
+        letter-spacing: 4px;
+
+    }
+
+
+    /* ----------------------------------------------
+       MÉTRICAS
+    ---------------------------------------------- */
+
+    .metricas-row {
+
+        margin-top: 5px;
+
+    }
+
+
+    .metrica-card {
+
+        height: auto;
+
+        min-height: 120px;
+
+        padding: 15px 18px;
+
+    }
+
+
+    .metrica-valor {
+
+        font-size: clamp(40px, 12vw, 58px);
+
+    }
+
+
+    .metrica-descripcion {
+
+        margin-top: 10px;
+
+        font-size: 13px;
+
+    }
+
+
+    /* ----------------------------------------------
+       TECNOLOGÍA
+    ---------------------------------------------- */
+
+    .tecnologia-section {
+
+        margin-top: 25px;
+
+    }
+
+
+    .tecnologia-titulo {
+
+        font-size: 13px;
+
+        letter-spacing: 3px;
+
+    }
+
+
+    .tecnologia-lista {
+
+        gap: 7px;
+
+    }
+
+
+    .tech-item {
+
+        min-height: 29px;
+
+        padding: 4px 12px;
+
+        font-size: 12px;
+
+    }
+
+
+    .pruebas-texto {
+
+        font-size: 10px;
+
+        line-height: 1.5;
+
+    }
+
+
+    /* ----------------------------------------------
+       QR
+    ---------------------------------------------- */
+
+    .qr-section {
+
+        margin-top: 15px;
+
+    }
+
+
+    .qr-titulo {
+
+        font-size: 14px;
+
+        letter-spacing: 3px;
+
+    }
+
+
+    .qr-content {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+    }
+
+
+    .plataforma-info {
+
+        width: 100%;
+
+    }
+
+
+    .plataforma-info h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .plataforma-url {
+
+        font-size: 11px;
+
+    }
+
+
+    .btn-plataforma {
+
+        margin-top: 18px;
+
+    }
+
+
+    .qr-wrapper {
+
+        width: 175px;
+
+        height: 175px;
+
+        flex-basis: 175px;
+
+    }
+
+
+    .repositorio {
+
+        margin-top: 10px;
+
+    }
+
+
+    .repositorio-titulo {
+
+        font-size: 30px;
+
+    }
+
+
+    .repositorio-url {
+
+        font-size: 11px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MÓVIL PEQUEÑO
+========================================================== */
+
+@media (max-width: 400px) {
+
+    .evidencia-section {
+
+        padding-left: 13px;
+
+        padding-right: 13px;
+
+    }
+
+
+    .seccion-numero {
+
+        font-size: 12px;
+
+        letter-spacing: 3px;
+
+    }
+
+
+    .metrica-card {
+
+        padding: 14px;
+
+    }
+
+
+    .metrica-valor {
+
+        font-size: 39px;
+
+    }
+
+
+    .metrica-descripcion {
+
+        font-size: 12px;
+
+    }
+
+
+    .tech-item {
+
+        font-size: 11px;
+
+        padding-left: 10px;
+
+        padding-right: 10px;
+
+    }
+
+
+    .qr-wrapper {
+
+        width: 155px;
+
+        height: 155px;
+
+        flex-basis: 155px;
+
+    }
+
+}
+
+/***Seccion6 Fin***/
+
+/***Seccion5 Inicio***/
+
+/* ==========================================================
+   VARIABLES DE COLOR
+========================================================== */
+
+:root {
+
+    /* Fondo principal de la imagen */
+    --decision-bg: #1B1537;
+
+    /* Amarillo */
+    --decision-yellow: #F5AA18;
+
+    /* Verde / turquesa */
+    --decision-green: #10AC91;
+
+    /* Morado / lila */
+    --decision-purple: #8882DF;
+
+    /* Blanco */
+    --decision-white: #FFFFFF;
+
+    /* Rosa */
+    --decision-pink: #EA2F68;
+
+    /* Fondo de los círculos de número */
+    --number-bg: #1B1537;
+
+}
+
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+
+.seccion5 {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--decision-bg);
+
+    color: var(--decision-white);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* ==========================================================
+   SECCIÓN PRINCIPAL
+========================================================== */
+
+.decision-section {
+
+    width: 100%;
+
+    background-color: var(--decision-bg);
+
+    padding: 30px 4% 35px;
+}
+
+
+/* ==========================================================
+   CONTENEDOR
+========================================================== */
+
+.decision-container {
+
+    width: 100%;
+
+    max-width: 1950px;
+
+    margin: 0 auto;
+}
+
+
+/* ==========================================================
+   ENCABEZADO
+========================================================== */
+
+.decision-header {
+
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 30px;
+
+    margin-bottom: 17px;
+}
+
+
+/* ==========================================================
+   TÍTULO
+========================================================== */
+
+.decision-title {
+
+    margin: 0;
+
+    color: var(--decision-white);
+
+    font-family:
+        Impact,
+        Haettenschweiler,
+        "Arial Narrow Bold",
+        sans-serif;
+
+    font-size: clamp(40px, 3.3vw, 62px);
+
+    font-weight: 900;
+
+    line-height: 0.9;
+
+    letter-spacing: -1px;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+}
+
+
+/* ==========================================================
+   NÚMERO DE SECCIÓN
+========================================================== */
+
+.decision-section-number {
+
+    margin-bottom: 2px;
+
+    color: var(--decision-yellow);
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: clamp(14px, 1vw, 18px);
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+
+    white-space: nowrap;
+}
+
+.decision-section-number span {
+
+    margin: 0 8px;
+
+}
+
+
+/* ==========================================================
+   FLUJO PRINCIPAL
+========================================================== */
+
+.decision-flow {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+}
+
+
+/* ==========================================================
+   CONTENEDOR DEL PASO
+========================================================== */
+
+.decision-step {
+
+    flex: 1 1 0;
+
+    min-width: 0;
+}
+
+
+/* ==========================================================
+   PASTILLA
+========================================================== */
+
+.step-pill {
+
+    width: 100%;
+
+    min-height: 61px;
+
+    padding: 7px 15px;
+
+    border-radius: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    overflow: hidden;
+}
+
+
+/* ==========================================================
+   COLORES DE LAS PASTILLAS
+========================================================== */
+
+.step-yellow {
+
+    background-color: var(--decision-yellow);
+
+    color: var(--decision-bg);
+}
+
+
+.step-green {
+
+    background-color: var(--decision-green);
+
+    color: var(--decision-bg);
+}
+
+
+.step-purple {
+
+    background-color: var(--decision-purple);
+
+    color: var(--decision-bg);
+}
+
+
+.step-white {
+
+    background-color: var(--decision-white);
+
+    color: var(--decision-bg);
+}
+
+
+.step-pink {
+
+    background-color: var(--decision-pink);
+
+    color: var(--decision-white);
+}
+
+
+/* ==========================================================
+   CÍRCULO DEL NÚMERO
+========================================================== */
+
+.step-number {
+
+    flex: 0 0 41px;
+
+    width: 41px;
+
+    height: 41px;
+
+    border-radius: 50%;
+
+    background-color: var(--number-bg);
+
+    color: var(--decision-white);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 21px;
+
+    font-weight: 900;
+
+    line-height: 1;
+}
+
+
+/* ==========================================================
+   TEXTO DEL PASO
+========================================================== */
+
+.step-text {
+
+    min-width: 0;
+
+    font-family:
+        Impact,
+        Haettenschweiler,
+        "Arial Narrow Bold",
+        sans-serif;
+
+    font-size: clamp(22px, 1.7vw, 32px);
+
+    font-weight: 900;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    text-transform: uppercase;
+}
+
+
+/* ==========================================================
+   FLECHAS
+========================================================== */
+
+.flow-arrow {
+
+    flex: 0 0 auto;
+
+    color: var(--decision-yellow);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    margin-top: -2px;
+}
+
+
+/* ==========================================================
+   PANTALLAS GRANDES
+========================================================== */
+
+@media (min-width: 1600px) {
+
+    .decision-section {
+
+        padding-left: 4%;
+
+        padding-right: 4%;
+    }
+
+    .step-pill {
+
+        min-height: 62px;
+
+        padding-left: 16px;
+
+        padding-right: 20px;
+    }
+
+    .step-number {
+
+        width: 42px;
+
+        height: 42px;
+    }
+
+}
+
+
+/* ==========================================================
+   LAPTOP
+========================================================== */
+
+@media (max-width: 1399.98px) {
+
+    .decision-section {
+
+        padding-left: 3%;
+
+        padding-right: 3%;
+    }
+
+    .decision-header {
+
+        gap: 25px;
+    }
+
+    .step-pill {
+
+        min-height: 57px;
+
+        gap: 11px;
+
+        padding: 6px 12px;
+    }
+
+    .step-number {
+
+        flex-basis: 38px;
+
+        width: 38px;
+
+        height: 38px;
+
+        font-size: 19px;
+    }
+
+    .step-text {
+
+        font-size: clamp(19px, 1.7vw, 28px);
+    }
+
+    .flow-arrow {
+
+        font-size: 35px;
+    }
+
+}
+
+
+/* ==========================================================
+   TABLET / PANTALLAS MEDIANAS
+========================================================== */
+
+@media (max-width: 1199.98px) {
+
+    .decision-header {
+
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px 25px;
+    }
+
+    .decision-title {
+
+        font-size: clamp(38px, 4.5vw, 55px);
+    }
+
+    .decision-section-number {
+
+        font-size: 14px;
+    }
+
+    .decision-flow {
+
+        gap: 7px;
+    }
+
+    .step-pill {
+
+        min-height: 53px;
+
+        gap: 8px;
+
+        padding-left: 10px;
+
+        padding-right: 10px;
+    }
+
+    .step-number {
+
+        flex-basis: 34px;
+
+        width: 34px;
+
+        height: 34px;
+
+        font-size: 17px;
+    }
+
+    .step-text {
+
+        font-size: clamp(16px, 1.8vw, 23px);
+    }
+
+    .flow-arrow {
+
+        font-size: 28px;
+    }
+
+}
+
+
+/* ==========================================================
+   TABLET PEQUEÑA
+========================================================== */
+
+@media (max-width: 991.98px) {
+
+    .decision-section {
+
+        padding: 28px 4% 32px;
+    }
+
+    .decision-title {
+
+        font-size: clamp(36px, 5.5vw, 50px);
+    }
+
+    .decision-flow {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+    .decision-step {
+
+        flex: 1 1 calc(50% - 30px);
+
+        max-width: calc(50% - 30px);
+    }
+
+    .flow-arrow {
+
+        display: none;
+    }
+
+    .step-pill {
+
+        min-height: 57px;
+
+        padding: 7px 14px;
+    }
+
+    .step-text {
+
+        font-size: clamp(19px, 2.7vw, 27px);
+    }
+
+}
+
+
+/* ==========================================================
+   MÓVIL
+========================================================== */
+
+@media (max-width: 767.98px) {
+
+    .decision-section {
+
+        padding: 28px 18px 32px;
+    }
+
+
+    /* ----------------------------------------------
+       ENCABEZADO
+    ---------------------------------------------- */
+
+    .decision-header {
+
+        display: block;
+
+        margin-bottom: 25px;
+    }
+
+    .decision-title {
+
+        font-size: clamp(40px, 11vw, 58px);
+
+        line-height: 0.9;
+
+        white-space: normal;
+    }
+
+    .decision-section-number {
+
+        margin-top: 12px;
+
+        font-size: 13px;
+
+        letter-spacing: 3px;
+    }
+
+
+    /* ----------------------------------------------
+       FLUJO
+    ---------------------------------------------- */
+
+    .decision-flow {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+
+    .decision-step {
+
+        width: 100%;
+
+        max-width: none;
+
+        flex: none;
+    }
+
+
+    /* ----------------------------------------------
+       PASTILLAS
+    ---------------------------------------------- */
+
+    .step-pill {
+
+        width: 100%;
+
+        min-height: 58px;
+
+        padding: 7px 15px;
+
+        border-radius: 35px;
+
+        gap: 13px;
+    }
+
+
+    .step-number {
+
+        flex: 0 0 40px;
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 20px;
+    }
+
+
+    .step-text {
+
+        font-size: clamp(22px, 7vw, 31px);
+
+        white-space: normal;
+
+        line-height: 1;
+    }
+
+
+    /* ----------------------------------------------
+       FLECHAS VERTICALES
+    ---------------------------------------------- */
+
+    .flow-arrow {
+
+        display: block;
+
+        width: 100%;
+
+        height: 18px;
+
+        margin: 0;
+
+        text-align: center;
+
+        font-size: 0;
+
+        line-height: 1;
+    }
+
+    .flow-arrow::after {
+
+        content: "↓";
+
+        color: var(--decision-yellow);
+
+        font-size: 28px;
+
+        font-weight: 700;
+    }
+
+}
+
+
+/* ==========================================================
+   MÓVIL PEQUEÑO
+========================================================== */
+
+@media (max-width: 400px) {
+
+    .decision-section {
+
+        padding-left: 14px;
+
+        padding-right: 14px;
+    }
+
+    .decision-title {
+
+        font-size: 38px;
+    }
+
+    .decision-section-number {
+
+        font-size: 11px;
+
+        letter-spacing: 2px;
+    }
+
+    .step-pill {
+
+        min-height: 54px;
+
+        padding: 6px 12px;
+
+        gap: 10px;
+    }
+
+    .step-number {
+
+        flex-basis: 36px;
+
+        width: 36px;
+
+        height: 36px;
+
+        font-size: 18px;
+    }
+
+    .step-text {
+
+        font-size: 21px;
+    }
+
+}
+
+/***Seccion5 fin***/
+
+
+/***Seccion2 Inicio***/
+
+
+/***Seccion3 Inicio***/
+
+/* ==========================================================
+   VARIABLES
+========================================================== */
+
+:root {
+
+    /* Fondo general */
+    --fondo: #F5F1EA;
+
+    /* Azul/morado principal */
+    --azul-plataforma: #4038C9;
+
+    /* Azul oscuro */
+    --azul-oscuro: #1B1537;
+
+    /* Rosa */
+    --rosa: #ED2F68;
+
+    /* Amarillo */
+    --amarillo: #F5B313;
+
+    /* Blanco */
+    --blanco: #FFFFFF;
+
+    /* Texto secundario */
+    --texto-claro: #E9E7FF;
+}
+
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--fondo);
+
+    color: var(--azul-oscuro);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* ==========================================================
+   SECCIÓN PRINCIPAL
+========================================================== */
+
+.seccion-plataforma {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    padding: 35px 4% 45px;
+
+    background-color: var(--fondo);
+}
+
+
+/* ==========================================================
+   CONTENEDOR
+========================================================== */
+
+.plataforma-container {
+
+    width: 100%;
+
+    max-width: 1900px;
+
+    margin: 0 auto;
+}
+
+
+/* ==========================================================
+   ENCABEZADO
+========================================================== */
+
+.seccion-header {
+
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================================
+   NÚMERO
+========================================================== */
+
+.seccion-numero {
+
+    color: var(--rosa);
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    letter-spacing: 5px;
+
+    line-height: 1.2;
+
+    margin-bottom: 5px;
+}
+
+.seccion-numero span {
+    margin: 0 8px;
+}
+
+
+/* ==========================================================
+   TÍTULO PRINCIPAL
+========================================================== */
+
+.titulo-principal {
+
+    margin: 0;
+
+    color: var(--azul-oscuro);
+
+    font-family:
+        Impact,
+        Haettenschweiler,
+        "Arial Narrow Bold",
+        sans-serif;
+
+    font-size: clamp(55px, 5.2vw, 105px);
+
+    font-weight: 900;
+
+    line-height: 0.9;
+
+    letter-spacing: -2px;
+
+    text-transform: uppercase;
+}
+
+
+/* ==========================================================
+   TARJETA PRINCIPAL
+========================================================== */
+
+.plataforma-card {
+
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    background-color: var(--azul-plataforma);
+
+    color: var(--blanco);
+}
+
+
+/* ==========================================================
+   CONTENIDO IZQUIERDO
+========================================================== */
+
+.contenido-plataforma {
+
+    height: 100%;
+
+    min-height: 425px;
+
+    padding: 35px 35px 30px 48px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+
+/* ==========================================================
+   DIFERENCIADOR
+========================================================== */
+
+.diferenciador {
+
+    color: var(--amarillo);
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+
+    line-height: 1.2;
+}
+
+
+/* ==========================================================
+   TÍTULO DE LA TARJETA
+========================================================== */
+
+.titulo-card {
+
+    margin: 12px 0 10px;
+
+    color: var(--blanco);
+
+    font-family:
+        Impact,
+        Haettenschweiler,
+        "Arial Narrow Bold",
+        sans-serif;
+
+    font-size: clamp(42px, 3.8vw, 70px);
+
+    font-weight: 900;
+
+    line-height: 0.88;
+
+    letter-spacing: -1px;
+
+    text-transform: uppercase;
+}
+
+
+/* ==========================================================
+   DESCRIPCIÓN
+========================================================== */
+
+.descripcion-card {
+
+    max-width: 780px;
+
+    margin: 0;
+
+    color: var(--texto-claro);
+
+    font-size: clamp(16px, 1.25vw, 23px);
+
+    font-weight: 500;
+
+    line-height: 1.3;
+
+    letter-spacing: 1px;
+}
+
+
+/* ==========================================================
+   CAJA DE FÓRMULA
+========================================================== */
+
+.formula-box {
+
+    width: 100%;
+
+    max-width: 780px;
+
+    margin-top: 25px;
+
+    padding: 13px 20px;
+
+    border-radius: 14px;
+
+    background-color: var(--azul-oscuro);
+}
+
+
+/* ==========================================================
+   FÓRMULA
+========================================================== */
+
+.formula {
+
+    color: var(--blanco);
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: clamp(13px, 1vw, 18px);
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    white-space: nowrap;
+}
+
+
+/* ==========================================================
+   TEXTO DE LA FÓRMULA
+========================================================== */
+
+.formula-descripcion {
+
+    margin-top: 3px;
+
+    color: #D7D3E8;
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: clamp(9px, 0.7vw, 13px);
+
+    line-height: 1.4;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* ==========================================================
+   CONTENEDOR DE LA GRÁFICA
+========================================================== */
+
+.grafica-container {
+
+    height: 100%;
+
+    min-height: 425px;
+
+    padding: 35px 45px 25px 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+}
+
+
+/* ==========================================================
+   GRÁFICA
+========================================================== */
+
+.grafica-img {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 100%;
+
+    height: auto;
+
+    /*
+        IMPORTANTE:
+
+        Aquí aparecerá tu gráfica.
+
+        Ejemplo:
+
+        src="img/grafica.png"
+
+        Si tu gráfica tiene fondo transparente,
+        quedará integrada directamente con
+        el fondo azul de la tarjeta.
+    */
+}
+
+
+/* ==========================================================
+   CUANDO TODAVÍA NO HAY IMAGEN
+========================================================== */
+
+.grafica-img[src=""] {
+
+    min-height: 250px;
+
+    /*
+       Puedes quitar este bloque cuando
+       coloques tu imagen.
+    */
+
+    opacity: 0;
+}
+
+
+/* ==========================================================
+   INFORMACIÓN DE LA GRÁFICA
+========================================================== */
+
+.grafica-info {
+
+    width: 100%;
+
+    margin-top: 3px;
+}
+
+
+.grafica-fecha {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 0 2px;
+
+    color: #D8D5F5;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* ==========================================================
+   ESTADÍSTICAS
+========================================================== */
+
+.estadisticas {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        1.4fr
+        1.2fr;
+
+    gap: 25px;
+
+    width: 100%;
+
+    margin-top: 18px;
+}
+
+
+/* ==========================================================
+   ESTADÍSTICA
+========================================================== */
+
+.estadistica {
+
+    min-width: 0;
+}
+
+
+/* ==========================================================
+   VALORES
+========================================================== */
+
+.estadistica-valor {
+
+    font-family:
+        Impact,
+        Haettenschweiler,
+        "Arial Narrow Bold",
+        sans-serif;
+
+    font-size: clamp(30px, 2.6vw, 50px);
+
+    font-weight: 900;
+
+    line-height: 0.9;
+
+    white-space: nowrap;
+}
+
+
+/* ==========================================================
+   COLORES DE LOS VALORES
+========================================================== */
+
+.amarillo {
+    color: var(--amarillo);
+}
+
+.blanco {
+    color: var(--blanco);
+}
+
+.rosa {
+    color: var(--rosa);
+}
+
+
+/* ==========================================================
+   TEXTO ESTADÍSTICA
+========================================================== */
+
+.estadistica-titulo {
+
+    margin-top: 6px;
+
+    color: #D8D5F5;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    line-height: 1.1;
+}
+
+
+/* ==========================================================
+   SUBTÍTULO DE BANDAS
+========================================================== */
+
+.estadistica-subtitulo {
+
+    margin-top: 6px;
+
+    color: #D8D5F5;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    line-height: 1.1;
+}
+
+
+/* ==========================================================
+   XL
+========================================================== */
+
+@media (max-width: 1399.98px) {
+
+    .seccion-plataforma {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .contenido-plataforma {
+        padding-left: 35px;
+        padding-right: 25px;
+    }
+
+    .grafica-container {
+        padding-right: 30px;
+    }
+
+    .estadisticas {
+        gap: 15px;
+    }
+
+}
+
+
+/* ==========================================================
+   LG / TABLET
+========================================================== */
+
+@media (max-width: 1199.98px) {
+
+    .titulo-principal {
+        font-size: clamp(50px, 7vw, 80px);
+    }
+
+    .plataforma-card {
+        border-radius: 24px;
+    }
+
+    .contenido-plataforma {
+        min-height: auto;
+
+        padding: 35px 40px 25px;
+    }
+
+    .grafica-container {
+        min-height: auto;
+
+        padding: 20px 40px 30px;
+    }
+
+    .titulo-card {
+        font-size: clamp(45px, 5.5vw, 65px);
+    }
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 991.98px) {
+
+    .seccion-plataforma {
+        padding: 30px 4% 40px;
+    }
+
+    .seccion-numero {
+        font-size: 16px;
+    }
+
+    .titulo-principal {
+        font-size: clamp(48px, 8vw, 75px);
+    }
+
+    .contenido-plataforma {
+        padding: 35px 35px 25px;
+    }
+
+    .grafica-container {
+        padding: 15px 35px 30px;
+    }
+
+    .estadistica-valor {
+        font-size: clamp(28px, 5vw, 45px);
+    }
+
+}
+
+
+/* ==========================================================
+   MÓVIL
+========================================================== */
+
+@media (max-width: 767.98px) {
+
+    .seccion-plataforma {
+        padding: 25px 18px 35px;
+    }
+
+
+    /* ----------------------------------------------
+       ENCABEZADO
+    ---------------------------------------------- */
+
+    .seccion-header {
+        margin-bottom: 18px;
+    }
+
+    .seccion-numero {
+        font-size: 13px;
+
+        letter-spacing: 3px;
+    }
+
+    .seccion-numero span {
+        margin: 0 5px;
+    }
+
+    .titulo-principal {
+        font-size: clamp(42px, 12vw, 65px);
+
+        line-height: 0.9;
+
+        letter-spacing: -1px;
+    }
+
+
+    /* ----------------------------------------------
+       TARJETA
+    ---------------------------------------------- */
+
+    .plataforma-card {
+        border-radius: 20px;
+    }
+
+
+    /* ----------------------------------------------
+       CONTENIDO
+    ---------------------------------------------- */
+
+    .contenido-plataforma {
+
+        min-height: auto;
+
+        padding: 28px 25px 20px;
+    }
+
+
+    .diferenciador {
+
+        font-size: 13px;
+
+        letter-spacing: 2.5px;
+    }
+
+
+    .titulo-card {
+
+        margin-top: 14px;
+
+        font-size: clamp(38px, 10vw, 55px);
+
+        line-height: 0.9;
+    }
+
+
+    .descripcion-card {
+
+        font-size: 16px;
+
+        line-height: 1.35;
+
+        letter-spacing: 0.5px;
+    }
+
+
+    /* ----------------------------------------------
+       FÓRMULA
+    ---------------------------------------------- */
+
+    .formula-box {
+
+        margin-top: 22px;
+
+        padding: 12px 14px;
+
+        overflow-x: auto;
+    }
+
+    .formula {
+
+        font-size: 12px;
+    }
+
+    .formula-descripcion {
+
+        font-size: 8px;
+
+        white-space: nowrap;
+    }
+
+
+    /* ----------------------------------------------
+       GRÁFICA
+    ---------------------------------------------- */
+
+    .grafica-container {
+
+        min-height: auto;
+
+        padding: 10px 25px 25px;
+    }
+
+
+    .grafica-img {
+
+        width: 100%;
+
+        height: auto;
+    }
+
+
+    .grafica-fecha {
+
+        font-size: 10px;
+    }
+
+
+    /* ----------------------------------------------
+       ESTADÍSTICAS
+    ---------------------------------------------- */
+
+    .estadisticas {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 22px 15px;
+
+        margin-top: 20px;
+    }
+
+
+    .estadistica-valor {
+
+        font-size: clamp(27px, 9vw, 40px);
+    }
+
+
+    .estadistica-titulo {
+
+        font-size: 9px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .estadistica-subtitulo {
+
+        font-size: 8px;
+
+        letter-spacing: 1px;
+    }
+
+}
+
+
+/* ==========================================================
+   MÓVIL PEQUEÑO
+========================================================== */
+
+@media (max-width: 400px) {
+
+    .seccion-plataforma {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .seccion-numero {
+        font-size: 11px;
+
+        letter-spacing: 2.5px;
+    }
+
+    .titulo-principal {
+        font-size: 40px;
+    }
+
+    .contenido-plataforma {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .grafica-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .diferenciador {
+        font-size: 11px;
+    }
+
+    .titulo-card {
+        font-size: 37px;
+    }
+
+    .descripcion-card {
+        font-size: 14px;
+    }
+
+    .estadisticas {
+        gap: 18px 10px;
+    }
+
+    .estadistica-valor {
+        font-size: 27px;
+    }
+
+}
+
+/***Seccion3 Fin***/
+
+
+
+/***Seccion4 Inicio***/
+
+/* ==========================================================
+   VARIABLES DE COLOR
+========================================================== */
+
+:root {
+
+    /* Fondo */
+    --color-fondo: #FAF7F0;
+
+    /* Azul oscuro */
+    --color-oscuro: #1B1537;
+
+    /* Rosa */
+    --color-rosa: #E9336C;
+
+    /* Morado */
+    --color-morado: #3B37C9;
+
+    /* Lila */
+    --color-lila: #8D89E7;
+
+    /* Verde */
+    --color-verde: #12A98A;
+
+    /* Amarillo */
+    --color-amarillo: #F2A91E;
+
+    /* Borde */
+    --color-borde: #E4D9CA;
+
+    /* Texto secundario */
+    --color-texto: #4F496D;
+
+}
+
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+.seccion4 {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--color-fondo);
+
+    color: var(--color-oscuro);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* ==========================================================
+   SECCIÓN
+========================================================== */
+
+.funcionalidades-section {
+
+    width: 100%;
+
+    padding: 15px 3.6% 20px;
+
+    background-color: var(--color-fondo);
+}
+
+
+/* ==========================================================
+   CONTENEDOR
+========================================================== */
+
+.funcionalidades-container {
+
+    width: 100%;
+
+    max-width: 1900px;
+
+    margin: 0 auto;
+}
+
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.feature-card {
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 345px;
+
+    padding: 23px 32px 22px;
+
+    background-color: #FFFFFF;
+
+    border: 2px solid var(--color-borde);
+
+    border-radius: 22px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* ==========================================================
+   EFECTO HOVER
+========================================================== */
+
+.feature-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(27, 21, 55, 0.08);
+}
+
+
+/* ==========================================================
+   CABECERA
+========================================================== */
+
+.card-header-custom {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    min-height: 38px;
+}
+
+
+/* ==========================================================
+   PARTE IZQUIERDA CABECERA
+========================================================== */
+
+.card-header-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    min-width: 0;
+}
+
+
+/* ==========================================================
+   ICONO
+========================================================== */
+
+.card-icon {
+
+    width: 46px;
+
+    height: 36px;
+
+    flex: 0 0 46px;
+
+    border-radius: 9px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* ==========================================================
+   COLORES DE ICONOS
+========================================================== */
+
+.icon-morado {
+    background-color: var(--color-morado);
+}
+
+.icon-rosa {
+    background-color: var(--color-rosa);
+}
+
+.icon-verde {
+    background-color: var(--color-verde);
+}
+
+.icon-lila {
+    background-color: var(--color-lila);
+}
+
+.icon-amarillo {
+    background-color: var(--color-amarillo);
+}
+
+.icon-azul {
+    background-color: var(--color-oscuro);
+}
+
+
+/* ==========================================================
+   IMAGEN DEL ICONO
+========================================================== */
+
+.card-icon-img {
+
+    width: 23px;
+
+    height: 23px;
+
+    object-fit: contain;
+}
+
+
+/*
+    EJEMPLO:
+
+    <img
+        src="img/icono-cartera.svg"
+        alt=""
+        class="card-icon-img"
+    >
+*/
+
+
+/* ==========================================================
+   NÚMERO / CATEGORÍA
+========================================================== */
+
+.card-number {
+
+    color: var(--color-oscuro);
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    white-space: nowrap;
+}
+
+
+/* ==========================================================
+   RUTA
+========================================================== */
+
+.card-route {
+
+    color: #5D5878;
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* ==========================================================
+   TÍTULO
+========================================================== */
+
+.card-title {
+
+    margin: 9px 0 7px;
+
+    color: var(--color-oscuro);
+
+    font-family:
+        Impact,
+        Haettenschweiler,
+        "Arial Narrow Bold",
+        sans-serif;
+
+    font-size: clamp(31px, 2.25vw, 45px);
+
+    font-weight: 900;
+
+    line-height: 0.95;
+
+    letter-spacing: -0.5px;
+
+    text-transform: uppercase;
+}
+
+
+/* ==========================================================
+   CONTENEDOR DE IMAGEN
+========================================================== */
+
+.card-image-container {
+
+    width: 100%;
+
+    height: 132px;
+
+    margin-bottom: 8px;
+
+    border: 3px solid #111111;
+
+    background-color: #FFFFFF;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* ==========================================================
+   IMAGEN
+========================================================== */
+
+.card-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/*
+    AQUÍ ASIGNAS LA RUTA:
+
+    <img
+        src="img/portfolio.png"
+        alt="Portafolio"
+        class="card-image"
+    >
+
+
+    Si necesitas que la imagen completa siempre
+    sea visible, cambia:
+
+    object-fit: cover;
+
+    por:
+
+    object-fit: contain;
+*/
+
+
+/* ==========================================================
+   TEXTO DE LA CARD
+========================================================== */
+
+.card-description {
+
+    margin: 0;
+
+    color: var(--color-texto);
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: clamp(14px, 1vw, 19px);
+
+    font-weight: 500;
+
+    line-height: 1.3;
+
+    letter-spacing: 0.7px;
+}
+
+
+/* ==========================================================
+   EXTRAS
+========================================================== */
+
+.extras-container {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 17px;
+}
+
+
+/* ==========================================================
+   TITULO EXTRAS
+========================================================== */
+
+.extras-title {
+
+    color: #5B5575;
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+
+/* ==========================================================
+   LISTA
+========================================================== */
+
+.extras-list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+/* ==========================================================
+   ITEM EXTRA
+========================================================== */
+
+.extra-item {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 30px;
+
+    padding: 5px 15px;
+
+    border: 1.5px solid var(--color-borde);
+
+    border-radius: 20px;
+
+    background-color: #FFFFFF;
+
+    color: var(--color-oscuro);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+/* ==========================================================
+   HOVER EXTRAS
+========================================================== */
+
+.extra-item:hover {
+
+    background-color: #F5F0E8;
+
+    border-color: #CFC3B3;
+}
+
+
+/* ==========================================================
+   PANTALLAS GRANDES
+========================================================== */
+
+@media (min-width: 1600px) {
+
+    .feature-card {
+
+        min-height: 350px;
+
+        padding-left: 33px;
+
+        padding-right: 33px;
+    }
+
+    .card-image-container {
+
+        height: 132px;
+    }
+
+}
+
+
+/* ==========================================================
+   LAPTOP
+========================================================== */
+
+@media (max-width: 1399.98px) {
+
+    .funcionalidades-section {
+
+        padding-left: 3%;
+
+        padding-right: 3%;
+    }
+
+    .feature-card {
+
+        padding: 20px 27px;
+    }
+
+    .card-number {
+
+        font-size: 13px;
+
+        letter-spacing: 2.5px;
+    }
+
+    .card-title {
+
+        font-size: clamp(29px, 2.4vw, 40px);
+    }
+
+    .card-image-container {
+
+        height: 125px;
+    }
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 1199.98px) {
+
+    .feature-card {
+
+        min-height: 340px;
+
+        padding: 20px 24px;
+    }
+
+    .card-header-custom {
+
+        gap: 8px;
+    }
+
+    .card-header-left {
+
+        gap: 10px;
+    }
+
+    .card-icon {
+
+        width: 42px;
+
+        height: 34px;
+
+        flex-basis: 42px;
+    }
+
+    .card-number {
+
+        font-size: 12px;
+
+        letter-spacing: 2px;
+    }
+
+    .card-route {
+
+        font-size: 11px;
+    }
+
+    .card-title {
+
+        font-size: clamp(27px, 3vw, 37px);
+    }
+
+    .card-description {
+
+        font-size: 14px;
+    }
+
+}
+
+
+/* ==========================================================
+   TABLET PEQUEÑA
+========================================================== */
+
+@media (max-width: 991.98px) {
+
+    .funcionalidades-section {
+
+        padding: 20px 4%;
+    }
+
+    .feature-card {
+
+        min-height: 330px;
+    }
+
+    .card-image-container {
+
+        height: 125px;
+    }
+
+    .card-title {
+
+        font-size: clamp(29px, 4vw, 40px);
+    }
+
+}
+
+
+/* ==========================================================
+   MÓVIL
+========================================================== */
+
+@media (max-width: 767.98px) {
+
+    .funcionalidades-section {
+
+        padding: 15px 18px 25px;
+    }
+
+
+    /* ------------------------------------------
+       CARD
+    ------------------------------------------ */
+
+    .feature-card {
+
+        min-height: auto;
+
+        padding: 20px;
+
+        border-radius: 18px;
+    }
+
+
+    /* ------------------------------------------
+       CABECERA
+    ------------------------------------------ */
+
+    .card-header-custom {
+
+        align-items: center;
+    }
+
+    .card-header-left {
+
+        gap: 10px;
+    }
+
+    .card-icon {
+
+        width: 42px;
+
+        height: 34px;
+
+        flex-basis: 42px;
+    }
+
+    .card-icon-img {
+
+        width: 21px;
+
+        height: 21px;
+    }
+
+    .card-number {
+
+        font-size: 12px;
+
+        letter-spacing: 1.8px;
+    }
+
+    .card-route {
+
+        font-size: 10px;
+    }
+
+
+    /* ------------------------------------------
+       TÍTULO
+    ------------------------------------------ */
+
+    .card-title {
+
+        margin-top: 10px;
+
+        font-size: clamp(30px, 9vw, 42px);
+    }
+
+
+    /* ------------------------------------------
+       IMAGEN
+    ------------------------------------------ */
+
+    .card-image-container {
+
+        height: 160px;
+
+        margin-top: 2px;
+
+        margin-bottom: 10px;
+    }
+
+
+    /* ------------------------------------------
+       DESCRIPCIÓN
+    ------------------------------------------ */
+
+    .card-description {
+
+        font-size: 14px;
+
+        line-height: 1.35;
+    }
+
+
+    /* ------------------------------------------
+       EXTRAS
+    ------------------------------------------ */
+
+    .extras-container {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        margin-top: 22px;
+    }
+
+    .extras-title {
+
+        font-size: 12px;
+    }
+
+    .extras-list {
+
+        width: 100%;
+
+        gap: 7px;
+    }
+
+    .extra-item {
+
+        font-size: 12px;
+
+        padding: 5px 12px;
+    }
+
+}
+
+
+/* ==========================================================
+   MÓVIL PEQUEÑO
+========================================================== */
+
+@media (max-width: 400px) {
+
+    .funcionalidades-section {
+
+        padding-left: 12px;
+
+        padding-right: 12px;
+    }
+
+    .feature-card {
+
+        padding: 17px;
+    }
+
+    .card-number {
+
+        font-size: 10px;
+
+        letter-spacing: 1.2px;
+    }
+
+    .card-route {
+
+        font-size: 9px;
+    }
+
+    .card-title {
+
+        font-size: 29px;
+    }
+
+    .card-image-container {
+
+        height: 135px;
+    }
+
+    .card-description {
+
+        font-size: 13px;
+    }
+
+}
+
+/***Seccion5 Fin***/
+
+
+
+
+/* ==========================================================
+   VARIABLES DE COLOR
+========================================================== */
+
+:root {
+
+    /* Colores extraídos de la imagen */
+    --color-fondo: #F1E8DF;
+    --color-oscuro: #1B1537;
+    --color-rosa: #E9336C;
+    --color-dorado: #F1A81D;
+
+    /* Texto secundario */
+    --color-texto-secundario: #69617D;
+}
+
+
+/* ==========================================================
+   CONFIGURACIÓN GENERAL
+========================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--color-fondo);
+
+    color: var(--color-oscuro);
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ==========================================================
+   SECCIÓN PRINCIPAL
+========================================================== */
+
+.problema-section {
+
+    width: 100%;
+
+    min-height: 197px;
+
+    background-color: var(--color-fondo);
+
+    padding: 30px 4%;
+}
+
+
+/* ==========================================================
+   CONTENEDOR
+========================================================== */
+
+.problema-section .container-fluid {
+    max-width: 1950px;
+
+    margin: 0 auto;
+}
+
+
+/* ==========================================================
+   COLUMNA IZQUIERDA
+========================================================== */
+
+.problema-titulo {
+    padding-left: 15px;
+}
+
+
+/* ==========================================================
+   NUMERO / TEXTO SUPERIOR
+========================================================== */
+
+.problema-numero {
+
+    margin-bottom: 4px;
+
+    color: var(--color-rosa);
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    letter-spacing: 5px;
+
+    line-height: 1.2;
+}
+
+.problema-numero span {
+    margin: 0 8px;
+}
+
+
+/* ==========================================================
+   TITULO PRINCIPAL
+========================================================== */
+
+.problema-titulo h1 {
+
+    margin: 0;
+
+    color: var(--color-oscuro);
+
+    font-size: clamp(38px, 3.2vw, 61px);
+
+    font-weight: 900;
+
+    line-height: 0.92;
+
+    letter-spacing: -2px;
+
+    /*
+       Si utilizas una tipografía específica
+       puedes reemplazarla aquí.
+    */
+
+    font-family:
+        Impact,
+        Haettenschweiler,
+        "Arial Narrow Bold",
+        sans-serif;
+}
+
+
+/* ==========================================================
+   PARTE ROSA DEL TITULO
+========================================================== */
+
+.problema-titulo h1 span {
+
+    color: var(--color-rosa);
+
+}
+
+
+/* ==========================================================
+   GRID DE PROBLEMAS
+========================================================== */
+
+.problemas-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    column-gap: 55px;
+
+    row-gap: 15px;
+
+    padding: 0 10px;
+}
+
+
+/* ==========================================================
+   ITEM
+========================================================== */
+
+.problema-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    min-width: 0;
+}
+
+
+/* ==========================================================
+   CONTENEDOR DEL ICONO
+========================================================== */
+
+.icono-problema {
+
+    flex: 0 0 68px;
+
+    width: 68px;
+
+    height: 49px;
+
+    border-radius: 15px;
+
+    background-color: var(--color-oscuro);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* ==========================================================
+   IMAGEN DEL ICONO
+========================================================== */
+
+.icono-img {
+
+    width: 28px;
+
+    height: 28px;
+
+    object-fit: contain;
+
+    /*
+       Cuando coloques tus imágenes:
+
+       Ejemplo:
+
+       <img
+           src="img/icono-calculadora.svg"
+           class="icono-img"
+           alt=""
+       >
+
+       Las imágenes deberían ser preferentemente
+       SVG o PNG con fondo transparente.
+    */
+}
+
+
+/* ==========================================================
+   CONTENIDO DEL ITEM
+========================================================== */
+
+.problema-contenido {
+
+    min-width: 0;
+}
+
+
+/* ==========================================================
+   TITULO DEL ITEM
+========================================================== */
+
+.problema-contenido h3 {
+
+    margin: 0 0 2px 0;
+
+    color: var(--color-oscuro);
+
+    font-size: clamp(15px, 1.15vw, 20px);
+
+    font-weight: 800;
+
+    line-height: 1.2;
+}
+
+
+/* ==========================================================
+   DESCRIPCIÓN
+========================================================== */
+
+.problema-contenido p {
+
+    margin: 0;
+
+    color: var(--color-texto-secundario);
+
+    font-size: clamp(13px, 0.95vw, 17px);
+
+    font-weight: 500;
+
+    line-height: 1.3;
+
+    letter-spacing: 0.4px;
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 1199.98px) {
+
+    .problema-section {
+        padding: 35px 4%;
+    }
+
+    .problemas-grid {
+
+        column-gap: 30px;
+
+        row-gap: 22px;
+    }
+
+    .problema-item {
+        gap: 13px;
+    }
+
+    .icono-problema {
+
+        flex-basis: 58px;
+
+        width: 58px;
+
+        height: 46px;
+
+        border-radius: 13px;
+    }
+
+    .icono-img {
+
+        width: 25px;
+
+        height: 25px;
+    }
+
+}
+
+
+/* ==========================================================
+   TABLET PEQUEÑA
+========================================================== */
+
+@media (max-width: 991.98px) {
+
+    .problema-section {
+
+        padding: 40px 6%;
+    }
+
+    .problema-titulo {
+
+        padding-left: 0;
+
+        text-align: center;
+
+        margin-bottom: 20px;
+    }
+
+    .problema-titulo h1 {
+
+        font-size: clamp(42px, 7vw, 60px);
+    }
+
+    .problemas-grid {
+
+        padding: 0;
+
+        column-gap: 30px;
+    }
+
+}
+
+
+/* ==========================================================
+   MÓVIL
+========================================================== */
+
+@media (max-width: 767.98px) {
+
+    .problema-section {
+
+        padding: 35px 20px;
+    }
+
+
+    /* Título */
+
+    .problema-titulo {
+
+        text-align: left;
+
+        margin-bottom: 30px;
+    }
+
+    .problema-numero {
+
+        font-size: 14px;
+
+        letter-spacing: 4px;
+    }
+
+    .problema-titulo h1 {
+
+        font-size: clamp(40px, 11vw, 58px);
+
+        line-height: 0.95;
+
+        letter-spacing: -1px;
+    }
+
+
+    /* Grid */
+
+    .problemas-grid {
+
+        grid-template-columns: 1fr;
+
+        row-gap: 22px;
+    }
+
+
+    /* Items */
+
+    .problema-item {
+
+        gap: 15px;
+    }
+
+
+    /* Iconos */
+
+    .icono-problema {
+
+        flex: 0 0 60px;
+
+        width: 60px;
+
+        height: 48px;
+    }
+
+
+    .icono-img {
+
+        width: 25px;
+
+        height: 25px;
+    }
+
+
+    /* Textos */
+
+    .problema-contenido h3 {
+
+        font-size: 17px;
+    }
+
+    .problema-contenido p {
+
+        font-size: 14px;
+    }
+
+}
+
+
+/* ==========================================================
+   MÓVIL PEQUEÑO
+========================================================== */
+
+@media (max-width: 400px) {
+
+    .problema-section {
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+    }
+
+    .problema-titulo h1 {
+
+        font-size: 38px;
+    }
+
+    .problema-numero {
+
+        font-size: 12px;
+
+        letter-spacing: 3px;
+    }
+
+    .icono-problema {
+
+        flex-basis: 55px;
+
+        width: 55px;
+
+        height: 45px;
+
+        border-radius: 12px;
+    }
+
+    .problema-contenido h3 {
+
+        font-size: 15px;
+    }
+
+    .problema-contenido p {
+
+        font-size: 13px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/***Seccion2 Fin***/
+
+/* =========================================================
+   Sección principal
+   ========================================================= */
+
+.hero-section {
+    overflow: hidden;
+    background-color: var(--color-background);
+}
+
+.hero-container {
+    margin-inline: auto;
+    padding:
+        clamp(1.25rem, 2.6vw, 2.75rem)
+        var(--page-padding-x)
+        clamp(1.5rem, 4vw, 3rem);
+}
+
+/* =========================================================
+   Texto superior
+   ========================================================= */
+
+.hero-eyebrow {
+    color: var(--color-orange);
+    font-family: var(--font-mono);
+    font-size: clamp(0.68rem, 1.18vw, 1.45rem);
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: clamp(0.12rem, 0.38vw, 0.4rem);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.hero-eyebrow span {
+    display: inline-block;
+    margin-inline: clamp(0.18rem, 0.45vw, 0.6rem);
+}
+
+/* =========================================================
+   Título INVESTTRACKER
+   ========================================================= */
+
+.hero-title {
+    display: flex;
+    align-items: baseline;
+    margin:
+        clamp(0rem, -0.25vw, -0.2rem)
+        0
+        clamp(0.4rem, 0.8vw, 0.9rem);
+
+    font-family: var(--font-display);
+    font-size: clamp(5rem, 14.2vw, 17rem);
+    font-weight: 400;
+    line-height: 0.88;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.hero-title-light {
+    color: var(--color-white);
+}
+
+.hero-title-accent {
+    color: var(--color-orange);
+}
+
+/* =========================================================
+   Eslogan, capital y descripción
+   ========================================================= */
+
+.hero-heading-content {
+    max-width: 1680px;
+}
+
+.hero-slogan,
+.hero-capital {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.012em;
+    text-transform: uppercase;
+}
+
+.hero-slogan {
+    color: var(--color-white);
+    font-size: clamp(2.2rem, 3.7vw, 4.55rem);
+}
+
+.hero-capital {
+    display: flex;
+    align-items: baseline;
+    gap: clamp(0.45rem, 0.8vw, 1rem);
+    font-size: clamp(2.3rem, 3.75vw, 4.7rem);
+}
+
+.hero-capital span {
+    color: var(--color-purple);
+}
+
+.hero-capital strong {
+    color: var(--color-pink);
+    font: inherit;
+}
+
+.hero-description {
+    max-width: 1720px;
+    margin-top: clamp(0.7rem, 1vw, 1.2rem) !important;
+    color: var(--color-text);
+    font-size: clamp(1rem, 1.47vw, 1.78rem);
+    font-weight: 400;
+    line-height: 1.45;
+    letter-spacing: 0.025em;
+}
+
+/* =========================================================
+   Zona inferior
+   ========================================================= */
+
+.hero-bottom {
+    margin-top: clamp(1.1rem, 1.5vw, 1.7rem);
+}
+
+/* =========================================================
+   Imagen
+   ========================================================= */
+
+.hero-image-frame {
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+ * aspect-ratio conserva una proporción similar a la imagen
+ * del diseño original y evita saltos durante la carga.
+ */
+
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* =========================================================
+   Panel lateral
+   ========================================================= */
+
+.features-panel {
+    padding-bottom: 0.2rem;
+}
+
+.features-kicker {
+    margin: 0 0 clamp(1.15rem, 1.8vw, 2rem);
+    color: var(--color-orange);
+    font-family: var(--font-mono);
+    font-size: clamp(0.78rem, 1vw, 1.16rem);
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: clamp(0.19rem, 0.42vw, 0.45rem);
+    text-transform: uppercase;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.1rem, 1.8vw, 2rem);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.feature-item {
+    display: grid;
+    grid-template-columns: clamp(2.9rem, 3.7vw, 4rem) minmax(0, 1fr);
+    column-gap: clamp(0.75rem, 1.1vw, 1.25rem);
+    align-items: start;
+}
+
+.feature-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(2.8rem, 3.45vw, 3.75rem);
+    aspect-ratio: 1.28 / 1;
+    margin-top: 0.15rem;
+    color: var(--color-white);
+    background-color: var(--color-pink);
+    border-radius: 999px;
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 1.17vw, 1.38rem);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.feature-content h3 {
+    margin: 0 0 0.22rem;
+    color: var(--color-white);
+    font-family: var(--font-display);
+    font-size: clamp(1.65rem, 2vw, 2.55rem);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+
+.feature-content p {
+    margin: 0;
+    color: var(--color-text);
+    font-size: clamp(0.9rem, 1.08vw, 1.3rem);
+    font-weight: 400;
+    line-height: 1.35;
+    letter-spacing: 0.015em;
+}
+
+.features-note {
+    margin-top: clamp(1.2rem, 2vw, 2.1rem) !important;
+    color: var(--color-muted);
+    font-family: var(--font-mono);
+    font-size: clamp(0.62rem, 0.76vw, 0.92rem);
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+}
+
+/* =========================================================
+   Pantallas grandes
+   ========================================================= */
+
+@media (min-width: 1200px) {
+    .hero-bottom > .col-xl-9 {
+        width: 77%;
+    }
+
+    .hero-bottom > .col-xl-3 {
+        width: 23%;
+    }
+}
+
+/* =========================================================
+   Portátiles y tabletas
+   ========================================================= */
+
+@media (max-width: 1399.98px) {
+    .hero-title {
+        font-size: clamp(4.7rem, 13.7vw, 11.5rem);
+    }
+
+    .hero-image-frame {
+        aspect-ratio: 16 / 5.3;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .hero-section,
+    .hero-container {
+        min-height: auto;
+    }
+
+    .hero-eyebrow {
+        white-space: normal;
+    }
+
+    .features-panel {
+        max-width: 900px;
+        padding-top: 0.5rem;
+    }
+
+    .features-list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    .feature-item {
+        grid-template-columns: 1fr;
+        row-gap: 0.75rem;
+    }
+
+    .hero-image-frame {
+        aspect-ratio: 16 / 6.3;
+    }
+}
+
+/* =========================================================
+   Tabletas
+   ========================================================= */
+
+@media (max-width: 991.98px) {
+    .hero-title {
+        font-size: clamp(4rem, 13.3vw, 8rem);
+    }
+
+    .hero-slogan {
+        line-height: 1.05;
+    }
+
+    .hero-description {
+        max-width: 760px;
+    }
+
+    .hero-image-frame {
+        aspect-ratio: 16 / 8;
+    }
+
+    .features-list {
+        grid-template-columns: 1fr;
+        gap: 1.4rem;
+    }
+
+    .feature-item {
+        grid-template-columns: 3.4rem minmax(0, 1fr);
+        row-gap: 0;
+    }
+}
+
+/* =========================================================
+   Móviles
+   ========================================================= */
+
+@media (max-width: 767.98px) {
+    :root {
+        --page-padding-x: clamp(1rem, 5vw, 1.75rem);
+    }
+
+    .hero-container {
+        padding-top: 1.25rem;
+    }
+
+    .hero-eyebrow {
+        font-size: clamp(0.65rem, 2.8vw, 0.82rem);
+        line-height: 1.65;
+        letter-spacing: 0.13rem;
+    }
+
+    .hero-title {
+        flex-wrap: wrap;
+        margin-top: 0.75rem;
+        margin-bottom: 1rem;
+        font-size: clamp(4.1rem, 21vw, 8.5rem);
+        line-height: 0.82;
+        white-space: normal;
+    }
+
+    .hero-title-light,
+    .hero-title-accent {
+        display: block;
+        width: 100%;
+    }
+
+    .hero-slogan {
+        font-size: clamp(2rem, 9vw, 3.2rem);
+        line-height: 1.02;
+    }
+
+    .hero-capital {
+        flex-wrap: wrap;
+        gap: 0.2rem 0.55rem;
+        margin-top: 0.35rem !important;
+        font-size: clamp(2.1rem, 9.4vw, 3.4rem);
+        line-height: 1;
+    }
+
+    .hero-description {
+        margin-top: 1rem !important;
+        font-size: clamp(0.95rem, 4vw, 1.1rem);
+        line-height: 1.55;
+    }
+
+    .hero-bottom {
+        margin-top: 1.4rem;
+    }
+
+    .hero-image-frame {
+        aspect-ratio: 4 / 3;
+    }
+
+    .features-kicker {
+        margin-bottom: 1.4rem;
+        font-size: 0.82rem;
+        letter-spacing: 0.25rem;
+    }
+
+    .feature-content h3 {
+        font-size: clamp(1.65rem, 7vw, 2.1rem);
+    }
+
+    .feature-content p {
+        font-size: 0.94rem;
+    }
+
+    .features-note {
+        font-size: 0.68rem;
+    }
+}
+
+/* =========================================================
+   Móviles pequeños
+   ========================================================= */
+
+@media (max-width: 399.98px) {
+    .hero-title {
+        font-size: clamp(3.55rem, 20vw, 4.8rem);
+    }
+
+    .hero-capital {
+        display: block;
+    }
+
+    .hero-capital strong {
+        display: block;
+        margin-top: 0.12rem;
+    }
+
+    .feature-item {
+        grid-template-columns: 2.9rem minmax(0, 1fr);
+        column-gap: 0.7rem;
+    }
+
+    .feature-number {
+        width: 2.7rem;
+    }
+}
+
+/* =========================================================
+   Accesibilidad: reducción de movimiento
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
