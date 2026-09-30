@@ -1085,6 +1085,178 @@
 </footer>
 
 
+<!-- =========================================================
+     BANNER DE CONSENTIMIENTO DE COOKIES
+========================================================= -->
+
+<div
+    id="uppCookieBanner27"
+    class="uppCookieBanner27"
+    role="dialog"
+    aria-label="Aviso de cookies"
+    aria-describedby="uppCookieText27"
+>
+
+    <div class="uppCookieContent27">
+
+        <p id="uppCookieText27" class="uppCookieText27">
+
+            Consultar nuestros 
+            <a
+                href="/terminos.html"
+                id="uppCookieLink27"
+                class="uppCookieLink27"
+                style="color: #1B1537; background-color: #aea5d6;"
+            > Términos de Uso</a> para conocer las condiciones aplicables al uso de este sitio.
+
+
+        </p>
+
+
+        <button
+            type="button"
+            id="uppCookieAccept27"
+            class="uppCookieAccept27"
+            style="color: #1B1537; background-color: #aea5d6;"
+        >
+            Aceptar
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT COOKIES
+========================================================= -->
+
+<script>
+
+(function () {
+
+    "use strict";
+
+
+    /* ========================================================
+       ELEMENTOS
+    ======================================================== */
+
+    const uppCookieBanner27 =
+        document.getElementById("uppCookieBanner27");
+
+    const uppCookieAccept27 =
+        document.getElementById("uppCookieAccept27");
+
+
+    /* ========================================================
+       CLAVE EXCLUSIVA DE LOCAL STORAGE
+    ======================================================== */
+
+    const uppCookieStorageKey27 =
+        "uppCookieConsent27";
+
+
+    /* ========================================================
+       VERIFICAR ELEMENTOS
+    ======================================================== */
+
+    if (
+        !uppCookieBanner27 ||
+        !uppCookieAccept27
+    ) {
+
+        console.error(
+            "Banner de cookies 27: no se encontraron los elementos."
+        );
+
+        return;
+
+    }
+
+
+    /* ========================================================
+       COMPROBAR CONSENTIMIENTO
+    ======================================================== */
+
+    let uppCookieConsent27 = null;
+
+
+    try {
+
+        uppCookieConsent27 =
+            localStorage.getItem(uppCookieStorageKey27);
+
+    } catch (error) {
+
+        console.error(
+            "Banner de cookies 27: no fue posible acceder a localStorage.",
+            error
+        );
+
+    }
+
+
+    /* ========================================================
+       MOSTRAR ÚNICAMENTE SI NO EXISTE CONSENTIMIENTO
+    ======================================================== */
+
+    if (uppCookieConsent27 !== "accepted") {
+
+        uppCookieBanner27.classList.add(
+            "uppCookieBanner27Visible"
+        );
+
+    }
+
+
+    /* ========================================================
+       BOTÓN ACEPTAR
+    ======================================================== */
+
+    uppCookieAccept27.addEventListener(
+        "click",
+        function () {
+
+
+            /* -----------------------------------------------
+               GUARDAR CONSENTIMIENTO
+            ------------------------------------------------ */
+
+            try {
+
+                localStorage.setItem(
+                    uppCookieStorageKey27,
+                    "accepted"
+                );
+
+            } catch (error) {
+
+                console.error(
+                    "Banner de cookies 27: no fue posible guardar el consentimiento.",
+                    error
+                );
+
+            }
+
+
+            /* -----------------------------------------------
+               OCULTAR BANNER
+            ------------------------------------------------ */
+
+            uppCookieBanner27.classList.remove(
+                "uppCookieBanner27Visible"
+            );
+
+        }
+    );
+
+
+})();
+
+</script>
+
+</script>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

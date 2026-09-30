@@ -1,6 +1,269 @@
-    /* Colores personalizados */
+/* ============================================================
+   BANNER DE COOKIES - IDENTIFICADOR 27
+============================================================ */
+
+.uppCookieBanner27 {
+
+    /* Posición */
+    position: fixed;
+
+    left: 0;
+    bottom: 0;
+
+    /* Tamaño */
+    width: 100%;
+
+    /* Colores */
+    background-color: #222222;
+
+    color: #ffffff;
+
+    /* Espaciado */
+    padding: 18px 30px;
+
+    /* Modelo */
+    box-sizing: border-box;
+
+    /* Prioridad */
+    z-index: 2147483647;
+
+    /* Sombra */
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.30);
+
+    /*
+       MUY IMPORTANTE:
+
+       El banner comienza completamente oculto.
+    */
+    display: none !important;
+
+}
+
+
+/* ============================================================
+   BANNER VISIBLE
+============================================================ */
+
+.uppCookieBanner27.uppCookieBanner27Visible {
+
+    display: block !important;
+
+}
+
+
+/* ============================================================
+   CONTENEDOR
+============================================================ */
+
+.uppCookieContent27 {
+
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+}
+
+
+/* ============================================================
+   TEXTO
+============================================================ */
+
+.uppCookieText27 {
+
+    margin: 0;
+
+    padding: 0;
+
+    color: #ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+}
+
+
+/* ============================================================
+   ENLACE
+============================================================ */
+
+.uppCookieLink27 {
+
+    color: #4dabf7;
+
+    font-weight: 600;
+
+    text-decoration: underline;
+
+}
+
+
+.uppCookieLink27:hover {
+
+    color: #74c0fc;
+
+}
+
+
+/* ============================================================
+   BOTÓN ACEPTAR
+============================================================ */
+
+.uppCookieAccept27 {
+
+    flex-shrink: 0;
+
+    min-width: 100px;
+
+    padding: 10px 25px;
+
+    background-color: #007bff;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.uppCookieAccept27:hover {
+
+    background-color: #0056b3;
+
+    transform: translateY(-1px);
+
+}
+
+
+.uppCookieAccept27:focus {
+
+    outline: 3px solid rgba(77, 171, 247, 0.5);
+
+    outline-offset: 2px;
+
+}
+
+
+/* ============================================================
+   TABLET
+============================================================ */
+
+@media (max-width: 768px) {
+
+    .uppCookieBanner27 {
+
+        padding: 16px 20px;
+
+    }
+
+
+    .uppCookieContent27 {
+
+        gap: 20px;
+
+    }
+
+
+    .uppCookieText27 {
+
+        font-size: 14px;
+
+    }
+
+
+    .uppCookieAccept27 {
+
+        padding: 9px 20px;
+
+    }
+
+}
+
+
+/* ============================================================
+   MÓVIL
+============================================================ */
+
+@media (max-width: 576px) {
+
+    .uppCookieBanner27 {
+
+        padding: 15px;
+
+    }
+
+
+    .uppCookieContent27 {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 15px;
+
+    }
+
+
+    .uppCookieText27 {
+
+        font-size: 13px;
+
+        text-align: center;
+
+    }
+
+
+    .uppCookieAccept27 {
+
+        width: 100%;
+
+        padding: 11px 20px;
+
+    }
+
+}
+   
+
+   
+   
+   
+   
+   /* Colores personalizados */
     .navbar-custom {
-      background-color: #0a1a3a; /* Azul oscuro */
+      background-color: #1B1537; /* Azul oscuro */
     }
     .navbar-brand {
       font-weight: bold;
