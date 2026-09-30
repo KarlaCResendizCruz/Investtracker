@@ -1,3 +1,17 @@
+.bodyTER {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainTER {
+    flex: 1;
+}
+
+.site-footerTER {
+    margin-top: auto;
+}
+
 /* ============================================================
    BANNER DE COOKIES - IDENTIFICADOR 27
 ============================================================ */
